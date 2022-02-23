@@ -1,29 +1,31 @@
 <template>
   <div class="sm:flex sm:py-10">
-    <div class="sm:order-last sm:w-1/2 md:w-1/2 sm:m-1" >
-      <p class="text-5xl font-semibold">Hello</p>
-      <p class="mt-3 text-xl font-semibold">A Bit About Me</p>
+    <div class="sm:order-last sm:w-1/2 md:w-1/2 sm:m-1">
+      <p class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-semibold">
+        Hello
+      </p>
+      <p class="mt-3 sm:mt-6 md:mt-8 text-xl font-semibold">A Bit About Me</p>
       <p class="font-light mt-1">
         I'm a paragraph. Click here to add your own text and edit me. I’m a
         great place for you to tell a story and let your users know a little
         more about you.
       </p>
-      <div class="flex justify-between mt-4">
+      <div class="flex justify-between mt-4 sm:mt-6 md:mt-8">
         <button
           @click="goTo('resume')"
-          class="h-24 w-24 rounded-full bg-amber-500 border border-black font-semibold"
+          class="h-24 w-24 lg:h-28 lg:w-28 rounded-full bg-amber-500 border border-black font-semibold"
         >
           Resume
         </button>
         <button
           @click="goTo('projects')"
-          class="h-24 w-24 rounded-full bg-red-500 border border-black font-semibold"
+          class="h-24 w-24 lg:h-28 lg:w-28 rounded-full bg-red-500 border border-black font-semibold"
         >
           Projects
         </button>
         <button
           @click="goTo('contact')"
-          class="h-24 w-24 rounded-full bg-sky-300 border border-black font-semibold"
+          class="h-24 w-24 lg:h-28 lg:w-28 rounded-full bg-sky-300 border border-black font-semibold"
         >
           Contact
         </button>

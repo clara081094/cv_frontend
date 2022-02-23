@@ -1,6 +1,6 @@
 <template>
   <div class="h-0.5 bg-gray-300 mt-10"></div>
-  <div class="p-5">
+  <div class="p-5 sm:flex sm:justify-between">
     <div class="mt-5">
       <p class="text-lg font-semibold">Phone</p>
       <p class="text-base font-light">213-321-213</p>
