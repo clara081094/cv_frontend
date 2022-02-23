@@ -12,29 +12,29 @@
           more about you.
         </p>
         <div class="flex justify-between mt-4 sm:mt-6 md:mt-8">
-          <button
-            @click="goTo('resume')"
-            class="h-24 w-24 lg:h-28 lg:w-28 rounded-full bg-amber-500 hover:bg-white duration-300 border border-black font-semibold"
+          <router-link
+            to="/resume"
+            class="h-24 w-24 lg:h-28 lg:w-28 rounded-full bg-amber-500 hover:bg-white duration-300 border border-black font-semibold flex items-center justify-center"
           >
             Resume
-          </button>
-          <button
-            @click="goTo('projects')"
-            class="h-24 w-24 lg:h-28 lg:w-28 rounded-full bg-red-500 hover:bg-white duration-300 border border-black font-semibold"
+          </router-link>
+          <router-link
+            to="/projects"
+            class="h-24 w-24 lg:h-28 lg:w-28 rounded-full bg-red-500 hover:bg-white duration-300 border border-black font-semibold flex items-center justify-center"
           >
             Projects
-          </button>
-          <button
-            @click="goTo('contact')"
-            class="h-24 w-24 lg:h-28 lg:w-28 rounded-full bg-sky-300 hover:bg-white duration-300 border border-black font-semibold"
+          </router-link>
+          <router-link
+            to="/contact"
+            class="h-24 w-24 lg:h-28 lg:w-28 rounded-full bg-sky-300 hover:bg-white duration-300 border border-black font-semibold flex items-center justify-center"
           >
             Contact
-          </button>
+          </router-link>
         </div>
       </div>
     </div>
     <div
-      class="mt-5 flex justify-center items-center  sm:w-1/2 sm:m-1 md:m-2 lg:m-3"
+      class="mt-5 flex justify-center items-center sm:w-1/2 sm:m-1 md:m-2 lg:m-3"
     >
       <img
         class="rounded-full w-full"
@@ -48,11 +48,7 @@
 <script>
 export default {
   components: {},
-  methods: {
-    goTo(payload) {
-      this.$router.push({ name: payload });
-    },
-  },
+  methods: {},
 };
 </script>
 

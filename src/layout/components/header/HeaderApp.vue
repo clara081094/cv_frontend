@@ -14,28 +14,28 @@
         :class="{ hidden: isClosed }"
         class="absolute flex items-center justify-center h-screen w-screen bg-white top-0 left-0"
       >
-        <button class="absolute top-5 right-8" @click="switchMenu">
+        <button class="absolute top-7 right-11" @click="switchMenu">
           <font-awesome-icon class="ml-2 text-2xl" :icon="['fas', 'xmark']" />
         </button>
         <div class="flex flex-col">
-          <a
-            href=""
+          <button
+            @click="goTo('resume')"
             class="hover:text-amber-700 duration-200 text-2xl font-light"
           >
             Resume
-          </a>
-          <a
-            href=""
+          </button>
+          <button
+            @click="goTo('projects')"
             class="hover:text-amber-700 duration-200 text-2xl font-light mt-5"
           >
             Projects
-          </a>
-          <a
-            href=""
+          </button>
+          <button
+            @click="goTo('contact')"
             class="hover:text-amber-700 duration-200 text-2xl font-light mt-5"
           >
             Contact
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -67,6 +67,7 @@ export default {
   components: { DotApp },
   methods: {
     goTo(payload) {
+      this.isClosed = true;
       this.$router.push({ name: payload });
     },
     switchMenu() {
