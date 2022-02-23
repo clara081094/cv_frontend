@@ -42,7 +42,8 @@
     </div>
     <div class="mt-5">
       <p class="text-lg font-semibold">Follow Me</p>
-      <p class="text-base font-light">213-321-213</p>
+      <font-awesome-icon :icon="['fab', 'linkedin-in']" />
+      <font-awesome-icon class="ml-2" :icon="['fab', 'twitter']" />
     </div>
     <div class="mt-5">
       <p class="text-xs font-light">© 2023 By Nicol Rider.</p>
