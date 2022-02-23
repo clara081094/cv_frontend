@@ -9,16 +9,19 @@
     </p>
     <div class="flex justify-between mt-4">
       <button
+        @click="goTo('resume')"
         class="h-24 w-24 rounded-full bg-amber-500 border border-black font-semibold"
       >
         Resume
       </button>
       <button
+        @click="goTo('projects')"
         class="h-24 w-24 rounded-full bg-red-500 border border-black font-semibold"
       >
         Projects
       </button>
       <button
+        @click="goTo('contact')"
         class="h-24 w-24 rounded-full bg-sky-300 border border-black font-semibold"
       >
         Contact
@@ -37,6 +40,11 @@
 <script>
 export default {
   components: {},
+  methods: {
+    goTo(payload) {
+      this.$router.push({ name: payload });
+    },
+  },
 };
 </script>
 
