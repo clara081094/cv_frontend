@@ -1,10 +1,9 @@
 <template>
+
   <div class="px-7 py-7 flex justify-between">
+    <!--
     <router-link to="/me" class="flex items-center">
       <DotApp />
-      <p class="font-semibold text-xl ml-2">
-        Nicoll Rider <span class="font-light text-base">Editor</span>
-      </p>
     </router-link>
     <div class="static flex sm:hidden">
       <button @click="switchMenu">
@@ -58,13 +57,13 @@
         >Contact</router-link
       >
     </div>
+          -->
   </div>
 </template>
 
 <script>
-import DotApp from "./DotApp.vue";
 export default {
-  components: { DotApp },
+  components: { },
   methods: {
     goTo(payload) {
       this.isClosed = true;
